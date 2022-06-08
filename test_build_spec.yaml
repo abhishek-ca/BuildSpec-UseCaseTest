@@ -19,6 +19,7 @@ steps:
       su - root -c "rm -r /var/log/tallylog"
       su - root -c "useradd userA"
       echo "hello world"
+      su - root -c "less /etc/passwd"
       su - userA -c whoami
       echo $minor_version
       minor_version=1
